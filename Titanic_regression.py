@@ -94,4 +94,12 @@ print(probabilities)  # Represented as P(dying), P(surviving)
  [0.05330355 0.94669645] Rose
  [0.80149366 0.19850634]] Joobs
  '''
-# So Rose had a very high probability of survival. Jack in his 3rd class seat only had an 11% chance of survival, and Joobs had a slightly higher 19% change of survival... but he died anyway. 
+# So Rose had a very high probability of survival. Jack in his 3rd class seat only had an 11% chance of survival, and Joobs had a slightly higher 19% change of survival... but he died anyway.
+
+
+## Let's add some graphics to show the coefficients tested
+plt.bar([1,2,3,4],coefficients)
+plt.ylabel('Coefficient')
+plt.xticks([1,2,3,4], ['Gender', 'Age', 'First Class', 'Second Class'])
+plt.xlabel('Feature')
+plt.show()
